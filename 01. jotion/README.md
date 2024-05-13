@@ -19,3 +19,5 @@
     - `components.json` - Yes
 
 - To run the dev server `npm run dev`
+
+- To add button component from shadcn, navigate to `notion-clone` and run `npx shadcn-ui@latest add button`.
