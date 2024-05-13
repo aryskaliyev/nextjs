@@ -1,0 +1,21 @@
+- Navigate to project root folder. Run `npx create-next-app@latest notion-clone`.
+    - `TypeScript` - Yes
+    - `ESLint` - Yes
+    - `TailwindCSS` - Yes
+    - `src/ directory` - No
+    - `App Router` - Yes
+    - `import alias (@/*)` - No
+
+- Navigate to `notion-clone`, and run `npx shadcn-ui@latest init` to install shadcn.
+    - `TypeScript` - Yes
+    - `style` - Default
+    - `base color` - Neutral
+    - `global CSS` file - app/globals.css
+    - `CSS variables` - Yes
+    - `tailwind.config.js` - tailwind.config.ts
+    - import alias for `components` - @/components
+    - import alias for `utils` - @/lib/utils
+    - `React Server Components` - Yes
+    - `components.json` - Yes
+
+- To run the dev server `npm run dev`
