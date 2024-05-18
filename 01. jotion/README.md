@@ -21,3 +21,13 @@
 - To run the dev server `npm run dev`
 
 - To add button component from shadcn, navigate to `notion-clone` and run `npx shadcn-ui@latest add button`.
+
+- To install dark mode with shadcn/ui run `npm install next-themes`.
+- To install `dropdown-menu` from shadcn/ui run `npx shadcn-ui@latest add dropdown-menu`.
+- To install icons run `@radix-ui/react-icons`.
+
+- Navigate to `notion-clone`, and run `npm install convex` to install the Convex client and server library.
+- To setup a Convex deployment run `npx convex dev`. It must run along with `npm run dev`:
+    - a new project
+    - project name
+- API functions, queries and mutations will be created inside `convex` directory.
