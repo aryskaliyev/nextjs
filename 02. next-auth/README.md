@@ -21,3 +21,7 @@
     - `components.json` - Y
 
 - To install shadcn-ui Button component run `npx shadcn-ui@latest add button`.
+- To install shadcn-ui Card component run `npx shadcn-ui@latest add card`.
+- To install react-icons run `npm i react-icons`.
+- To install shadcn-ui Form component run `npx shadcn-ui@latest add form`.
+- To install shadcn-ui Input component run `npx shadcn-ui@latest add input`.
