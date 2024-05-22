@@ -25,3 +25,7 @@
 - To install react-icons run `npm i react-icons`.
 - To install shadcn-ui Form component run `npx shadcn-ui@latest add form`.
 - To install shadcn-ui Input component run `npx shadcn-ui@latest add input`.
+- To install shadcn-ui Radio Group run `npx shadcn-ui@latest add radio-group`.
+- To install shadcn-ui Select run `npx shadcn-ui@latest add select`.
+- To install shadcn-ui Popover run `npx shadcn-ui@latest add popover`.
+- To install shadcn-ui Calendar run `npx shadcn-ui@latest add calendar`.
