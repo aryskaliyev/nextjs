@@ -15,11 +15,14 @@ datasource db {
 }
 
 model User {
-  id            String    @id @default(cuid())
+  id            String    @id @default(uuid())
   name          String?
   email         String    @unique
   emailVerified DateTime?
   password      String
+  sex           String
+  location      String
+  school        String
   image         String?
   accounts      Account[]
 

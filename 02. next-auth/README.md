@@ -39,5 +39,9 @@
 - To generate prisma client library run `npx prisma generate`.
 - To push database to neon.tech run `npx prisma db push`.
 - To install prisma adapter for authjs run `npm install @auth/prisma-adapter`.
-- To encrypt user password install bcrypt, run `npm i bcrypt`.
-- To install brcypt types run `npm i -D @types/bcrypt`.
+- To encrypt user password install bcryptjs, run `npm i bcryptjs`.
+- To install bcryptjs types run `npm i -D @types/bcryptjs`.
+
+- In order to enable login, we have to install next-auth v5 run `npm install next-auth@beta`.
+
+- Middleware is not next-auth specific. It is nextjs specific.
