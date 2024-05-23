@@ -29,3 +29,4 @@
 - To install shadcn-ui Select run `npx shadcn-ui@latest add select`.
 - To install shadcn-ui Popover run `npx shadcn-ui@latest add popover`.
 - To install shadcn-ui Calendar run `npx shadcn-ui@latest add calendar`.
+- To install shadcn-ui InputOTP run `npx shadcn-ui@latest add input-otp`.
