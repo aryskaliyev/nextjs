@@ -30,3 +30,14 @@
 - To install shadcn-ui Popover run `npx shadcn-ui@latest add popover`.
 - To install shadcn-ui Calendar run `npx shadcn-ui@latest add calendar`.
 - To install shadcn-ui InputOTP run `npx shadcn-ui@latest add input-otp`.
+
+- To install prisma ORM in dev mode run `npm i - D prisma`.
+- To install prisma clien run `npm i @prisma/client`.
+- To initialize prisma, create prisma schema, run `npx prisma init`.
+
+- Use neon.tech for postgresql database.
+- To generate prisma client library run `npx prisma generate`.
+- To push database to neon.tech run `npx prisma db push`.
+- To install prisma adapter for authjs run `npm install @auth/prisma-adapter`.
+- To encrypt user password install bcrypt, run `npm i bcrypt`.
+- To install brcypt types run `npm i -D @types/bcrypt`.
