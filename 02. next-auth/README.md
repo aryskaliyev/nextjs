@@ -45,3 +45,8 @@
 - In order to enable login, we have to install next-auth v5 run `npm install next-auth@beta`.
 
 - Middleware is not next-auth specific. It is nextjs specific.
+
+- To install uuid run `npm i uuid`.
+- To install uuid types run `npm i --save-dev @types/uuid`.
+
+- To install Resend run `npm install resend`.

@@ -14,12 +14,19 @@ datasource db {
   url      = env("DATABASE_URL")
 }
 
+enum UserRole {
+  STUDENT
+  MENTOR
+  ADMIN
+}
+
 model User {
   id            String    @id @default(uuid())
   name          String?
   email         String    @unique
   emailVerified DateTime?
   password      String
+  role          UserRole @default(STUDENT)
   sex           String
   location      String
   school        String
@@ -49,4 +56,13 @@ model Account {
   user User @relation(fields: [userId], references: [id], onDelete: Cascade)
 
   @@id([provider, providerAccountId])
+}
+
+model VerificationToken {
+  id String @id @default(cuid())
+  email String
+  token String @unique
+  expires DateTime
+
+  @@unique([email, token])
 }

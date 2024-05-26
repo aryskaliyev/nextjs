@@ -18,14 +18,48 @@ export const authRoutes = [
 ]; 
 
 /**
- * The prefix for API authentication routes
- * Routes that start with this prefix are used for API authentication purposes
- * @type {string}
+ * An array of routes that are accessible only to students
+ * These routes require logged in user to be STUDENT roles.
+ *  @type {string[]}
  */
-export const apiAuthPrefix = "/api/auth";
+
+export const authStudentRoutes = [
+    "/dashboard",
+];
+
+/**
+ * An array of routes that are accessible only to mentors
+ * These routes require logged in users to be MENTOR roles.
+  * @type {string[]}
+ */
+
+export const authMentorRoutes = [
+    "/mentor",
+];
+
+/**
+ * An array of routes that are accessible only to admins
+ * These routes require logged in users to be ADMIN roles.
+  * @type {string[]}
+ */
+
+export const authAdminRoutes = [
+    "/admin",
+];
+
+// /**
+//  * The prefix for API authentication routes
+//  * Routes that start with this prefix are used for API authentication purposes
+//  * @type {string}
+//  */
+// export const apiAuthPrefix = "/api/auth";
 
 /**
  * The default redirect path after logging in
  * @type {string}
  */
-export const DEFAULT_LOGIN_REDIRECT = "/settings";
+// export const DEFAULT_LOGIN_REDIRECT = "/settings";
+export const DEFAULT_STUDENT_LOGIN_REDIRECT = "/dashboard";
+export const DEFAULT_MENTOR_LOGIN_REDIRECT = "/mentor";
+export const DEFAULT_ADMIN_LOGIN_REDIRECT = "/admin";
+export const DEFAULT_LOGIN_REDIRECT = "/dashboard";
