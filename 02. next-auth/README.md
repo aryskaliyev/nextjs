@@ -31,7 +31,7 @@
 - To install shadcn-ui Calendar run `npx shadcn-ui@latest add calendar`.
 - To install shadcn-ui InputOTP run `npx shadcn-ui@latest add input-otp`.
 
-- To install prisma ORM in dev mode run `npm i - D prisma`.
+- To install prisma ORM in dev mode run `npm i -D prisma`.
 - To install prisma clien run `npm i @prisma/client`.
 - To initialize prisma, create prisma schema, run `npx prisma init`.
 
@@ -50,3 +50,5 @@
 - To install uuid types run `npm i --save-dev @types/uuid`.
 
 - To install Resend run `npm install resend`.
+
+- To install react spinners run `npm i react-spinners`.
