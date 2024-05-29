@@ -31,7 +31,7 @@ export const LoginForm = () => {
         resolver: zodResolver(LoginSchema),
         defaultValues: {
             email: "",
-            password: "", 
+            password: "",
         },
     });
 
@@ -55,16 +55,16 @@ export const LoginForm = () => {
         });
     };
 
-    return ( 
+    return (
         <CardWrapper
             headerLabel="Welcome back"
             backButtonLabel="Don't have an account?"
             backButtonHref="/auth/register"
         >
-            <Form {...form }>
+            <Form {...form}>
                 <form
                     onSubmit={form.handleSubmit(onSubmit)}
-                    className="space-y-6"    
+                    className="space-y-6"
                 >
                     <div className="space-y-4">
                         <FormField
@@ -112,7 +112,7 @@ export const LoginForm = () => {
                                     <FormMessage />
                                 </FormItem>
                             )}
-                        /> 
+                        />
                     </div>
                     <FormError message={error} />
                     <FormSuccess message={success} />
@@ -125,6 +125,6 @@ export const LoginForm = () => {
                     </Button>
                 </form>
             </Form>
-        </CardWrapper>   
-     );
+        </CardWrapper>
+    );
 };

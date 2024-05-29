@@ -10,6 +10,7 @@ import {
 } from "@/routes";
 import { auth } from "@/auth";
 import { NextResponse } from "next/server";
+import { UserRole } from "@prisma/client";
 
 export default auth((req) => {
   const { nextUrl } = req;
@@ -35,17 +36,17 @@ export default auth((req) => {
 
   if (isLoggedIn) {
     switch (userRole) {
-      case "STUDENT":
+      case UserRole.STUDENT:
         if (isStudentRoute) {
           return NextResponse.next();
         }
         return NextResponse.rewrite(new URL("/404", nextUrl));
-      case "MENTOR":
+      case UserRole.MENTOR:
         if (isMentorRoute) {
           return NextResponse.next();
         }
         return NextResponse.rewrite(new URL("/404", nextUrl));
-      case "ADMIN":
+      case UserRole.ADMIN:
         if (isAdminRoute) {
           return NextResponse.next();
         }

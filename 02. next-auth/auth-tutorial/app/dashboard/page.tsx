@@ -1,9 +1,11 @@
 import LogoutButton from "@/components/auth/logout-button";
-import { getCurrentSession } from "@/hooks/get-current-session";
+import { Card } from "@/components/ui/card";
+import { currentSession } from "@/lib/auth";
 
 const DashboardPage = async () => {
-  const session = await getCurrentSession();
-  const userRole = session?.user.role;
+  // const session = await auth();
+  // const userRole = session?.user.role;
+  const session = await currentSession();
   return (
     <div className="bg-green-500">
       <h1>DASHBOARD PAGE! </h1>

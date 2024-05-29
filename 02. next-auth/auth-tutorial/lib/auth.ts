@@ -1,6 +1,6 @@
 import { auth } from "@/auth";
 
-export async function getCurrentSession() {
+export const currentSession = async () => {
     const session = await auth();
     return session;
 }

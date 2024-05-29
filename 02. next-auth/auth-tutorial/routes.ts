@@ -28,6 +28,7 @@ export const authRoutes = [
 
 export const studentRoutes = [
     "/dashboard",
+    "/protected/events",
 ];
 
 /**

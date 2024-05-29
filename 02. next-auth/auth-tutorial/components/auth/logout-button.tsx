@@ -2,11 +2,12 @@
 
 import { logout } from "@/actions/logout";
 
-const LogoutButton = async () => {
-    return ( 
-        <form action={logout}>
-            <button type="submit">Signout</button>
-        </form>
+const LogoutButton = () => {
+    const onClick = async () => {
+        await logout();
+    }
+    return (
+            <button onClick={onClick} type="submit">Signout</button>
      );
 }
  
