@@ -26,7 +26,7 @@ export const authRoutes = [
  *  @type {string[]}
  */
 
-export const authStudentRoutes = [
+export const studentRoutes = [
     "/dashboard",
 ];
 
@@ -36,7 +36,8 @@ export const authStudentRoutes = [
   * @type {string[]}
  */
 
-export const authMentorRoutes = [
+export const mentorRoutes = [
+    "/dashboard",
     "/mentor",
 ];
 
@@ -46,7 +47,8 @@ export const authMentorRoutes = [
   * @type {string[]}
  */
 
-export const authAdminRoutes = [
+export const adminRoutes = [
+    "/dashboard",
     "/admin",
 ];
 

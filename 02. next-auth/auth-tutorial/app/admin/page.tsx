@@ -1,22 +1,26 @@
-import { auth, signOut } from "@/auth";
-import { redirect } from "next/navigation";
+import { auth } from "@/auth";
+import LogoutButton from "@/components/auth/logout-button";
 
 const AdminPage = async () => {
   const session = await auth();
+  const userRole = session?.user.role;
 
   return (
-    <div className="bg-yellow-500">
-        <h1>ADMIN PAGE!</h1>
+    <div className="bg-green-500">
+      <h1>
+        {/* {IsAdminRole(userRole) && <span>
+          ADMIN
+        </span>}
+        {IsStudentRole(userRole) && <span>
+          STUDENT
+        </span>}
+        {IsMentorRole(userRole) && <span>
+          MENTOR
+        </span>}
+        DASHBOARD PAGE!*/}
+        </h1>
       {JSON.stringify(session)}
-      <form
-        action={async () => {
-          "use server";
-
-          await signOut({redirectTo: "/"});
-        }}
-      >
-        <button type="submit">Sign out</button>
-      </form>
+      <LogoutButton />
     </div>
   );
 };
